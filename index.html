@@ -207,11 +207,15 @@ section{padding-block:112px}
 /* dúvidas */
 .faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
 .faq-list details{border-top:1px solid var(--areia);padding-block:18px}
-.faq-list details:last-child{border-bottom:1px solid var(--areia)}
+.faq-list details:last-of-type{border-bottom:1px solid var(--areia)}
 .faq-list summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
 .faq-list summary::-webkit-details-marker{display:none}
 .faq-list summary::after{content:"+";color:var(--salvia);font-size:1.3rem;line-height:1}
 .faq-list details[open] summary::after{content:"–"}
+.faq-note{margin-top:22px;color:var(--muted)}
+.faq-note a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
+.split{border-top:1px solid var(--areia);padding-top:72px}
+@media (max-width:820px){.split{padding-top:48px}}
 .faq-list details p{color:var(--muted);margin-top:10px;max-width:60ch}
 
 /* região */
@@ -387,17 +391,17 @@ footer{color:var(--muted);font-size:.92rem;margin-top:24px;border-top:1px solid 
         <h2>Nascemos para deixar as festas mais leves</h2>
       </div>
       <div class="who-right">
-        <p class="lead-p">A Flutuê é uma empresa de Rondonópolis criada por um casal que se encantou pelos infláveis brancos: brinquedos que divertem as crianças e, ao mesmo tempo, fazem parte da decoração.</p>
-        <p>Se você quiser, fazemos uma <strong>visita ao local antes da festa</strong> para conferir o espaço, a tomada e o melhor lugar para o brinquedo. No dia, chegamos com antecedência, deixamos tudo montado e um <strong>monitor acompanha as crianças</strong> até o fim.</p>
-        <p>O nome vem da sensação que queremos deixar em cada celebração: momentos leves, que parecem flutuar, e memórias que ficam.</p>
+        <p class="lead-p">A Flutuê nasceu em Rondonópolis, criada por um casal que se encantou pelos infláveis brancos: brinquedos que divertem as crianças e, ao mesmo tempo, fazem parte da decoração.</p>
+        <p>Queríamos um brinquedo que as crianças amassem e que também ficasse bonito na decoração, sem brigar com as cores da festa. Por isso escolhemos o branco e cuidamos de cada detalhe, da higienização à montagem.</p>
+        <p>O nome vem da sensação que queremos deixar em cada celebração: momentos leves, que parecem flutuar, e memórias que ficam. Feito em Rondonópolis, para as famílias da região.</p>
         <p class="sign">Momentos leves, memórias inesquecíveis.</p>
       </div>
     </div>
   </section>
 
-  <section style="padding-top:0">
-    <div class="wrap">
-      <div class="head"><p class="label">O jeito Flutuê</p><h2>Cuidado em cada detalhe</h2></div>
+  <section id="o-que-fazemos" style="padding-top:0">
+    <div class="wrap split">
+      <div class="head"><p class="label">O que fazemos</p><h2>Cuidado em cada detalhe</h2></div>
       <div class="why">
         <div>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M8 10a4.5 4.5 0 0 1 3-3"/></svg>
@@ -436,7 +440,6 @@ footer{color:var(--muted);font-size:.92rem;margin-top:24px;border-top:1px solid 
       <div class="head" style="margin:0">
         <p class="label">Dúvidas</p>
         <h2>Antes de reservar</h2>
-        <p>Não achou a sua resposta? Chame no WhatsApp e a gente responde.</p>
       </div>
       <div class="faq-list">
         <details><summary>O que o local precisa ter?</summary><p>O brinquedo precisa de um espaço plano, limpo e seco, sem lama, poças ou pedras, com uma tomada por perto. No orçamento, conferimos juntos as medidas e a voltagem.</p></details>
@@ -447,6 +450,7 @@ footer{color:var(--muted);font-size:.92rem;margin-top:24px;border-top:1px solid 
         <details><summary>Tem alguém cuidando das crianças no brinquedo?</summary><p>Sim. Um monitor da Flutuê fica no brinquedo durante a festa, orientando as crianças e cuidando da segurança.</p></details>
         <details><summary>Quais são os cuidados durante o uso?</summary><p>Sem sapatos, comidas, bebidas, objetos pontiagudos ou pintura facial e corporal dentro dos brinquedos. Assim eles ficam seguros e limpos para todo mundo.</p></details>
         <details><summary>Vocês atendem fora de Rondonópolis?</summary><p>Sim. Atendemos Rondonópolis e as cidades da região listadas no site. Para outras cidades, consulte a disponibilidade pelo WhatsApp.</p></details>
+        <p class="faq-note">Não achou a sua resposta? <a class="wa" data-msg="Olá! Vim pelo site e tenho uma dúvida: " href="#">Chame no WhatsApp</a> e a gente responde.</p>
       </div>
     </div>
   </section>
